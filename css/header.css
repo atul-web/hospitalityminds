@@ -176,7 +176,8 @@ HEADER (top part of page)
 .header-style1 .header-nav .nav>li .sub-menu li a {
 	color: #000;
 	display: block;
-	font-size: 13px;
+	font-size: 15px;
+	font-weight: 700;
 	padding: 10px 20px;
 	overflow: hidden;
 	border-left:0px solid transparent;	
@@ -523,3 +524,9 @@ HEADER (top part of page)
 
 	}
   }
+
+@media only screen and (max-width:768px){
+	.our-history-content .pic-bg-border{
+		margin-left: 0px !important;
+	}
+}
