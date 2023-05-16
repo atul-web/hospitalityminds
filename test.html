@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>GIF Preloader</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <style type="text/css">
+    body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f2f2f2;
+}
+
+.preloader {
+    text-align: center;
+}
+
+.preloader img {
+    max-width: 100%;
+    height: auto;
+}
+
+.hidden {
+    display: none;
+}
+
+    </style>
+</head>
+<body>
+    <div class="preloader">
+        <img src="img/preloader.gif" alt="Loading..." id="gif">
+    </div>
+
+    <script>
+    	// Optional JavaScript code if you want to add interactivity
+// Set the duration for the preloader in milliseconds
+var preloaderDuration = 3000; // 3 seconds
+
+// Remove preloader after the specified duration
+setTimeout(function() {
+    var preloader = document.querySelector(".preloader");
+    preloader.classList.add("hidden");
+}, preloaderDuration);
+
+
+    </script>
+</body>
+</html>
